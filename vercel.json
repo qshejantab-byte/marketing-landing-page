@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/marketing",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/marketing/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/marketing/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

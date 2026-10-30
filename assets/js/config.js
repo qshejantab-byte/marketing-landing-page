@@ -69,9 +69,9 @@ export const CONFIG = {
    *   client: "Client name",                 // shown as written
    *   title: "Short description of the piece",
    *   alt: "What the image shows",
-   *   src: "../assets/media/file-640.webp",   // poster or image
-   *   srcset: "../assets/media/file-640.webp 640w, ../assets/media/file-1280.webp 1280w",
-   *   video: "../assets/media/file.mp4",      // reels only, muted H.264, ≤ 4 MB
+   *   src: "assets/media/file-640.webp",   // poster or image
+   *   srcset: "assets/media/file-640.webp 640w, assets/media/file-1280.webp 1280w",
+   *   video: "assets/media/file.mp4",      // reels only, muted H.264, ≤ 4 MB
    *   permission: "approved",                 // anything else is ignored
    * }
    */

@@ -2,11 +2,14 @@
 
 A static, dependency-free landing page with no build step. It is built from the *TODO Growth Meta Advertising & Landing Page Blueprint* (v1.0) and [docs/MARKETING_LANDING_PAGE_DISCOVERY.md](docs/MARKETING_LANDING_PAGE_DISCOVERY.md) (approved direction: **B, "Impossible to Ignore"**, with Direction A's mobile ideas).
 
-- **Locally:** <http://localhost/marketing%20landing%20page/marketing/>
-- **Intended live route:** `https://todo.rw/marketing/` (canonical). The root `index.html` forwards to `marketing/` and keeps the query string.
+- **Locally:** <http://localhost/marketing%20landing%20page/>
+- **Live:** `https://marketing.todo.rw/` (canonical). The page is the root `index.html`. The old `/marketing/` address 301-redirects to `/` through `vercel.json`. `marketing/index.html` is a fallback redirect for hosts that ignore `vercel.json` (for example XAMPP).
 
 ```
-marketing/index.html        the page (all content is in the HTML, so it reads without JS)
+index.html                  the page (all content is in the HTML, so it reads without JS)
+marketing/index.html        old-URL redirect stub → /
+vercel.json                 301: /marketing → /
+robots.txt, sitemap.xml     SEO, root domain
 assets/css/marketing.css    design system "Impossible to Ignore"
 assets/js/config.js         ← contact details, form delivery, approved work, case study
 assets/js/main.js           noise walls, tune-in reveals, signal scope, work wall, compare slider, dock, review bar
